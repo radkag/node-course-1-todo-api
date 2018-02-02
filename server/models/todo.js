@@ -1,13 +1,11 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const Todo = mongoose.model("Todo", {
-    task: {
-        type: String,
-        required: true
+const Todo = mongoose.model('Todo', {
+    text: {
+        type: String
     },
     completed: {
-        type: Boolean,
-        default: false
+        type: Boolean
     },
     completedAt: {
         type: Number,
